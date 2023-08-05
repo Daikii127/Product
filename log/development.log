@@ -1329,3 +1329,15 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 640ms (Views: 579.3ms | ActiveRecord: 6.4ms)
 
 
+Started GET "/" for 172.25.0.1 at 2023-08-05 09:56:11 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 870ms (Views: 800.6ms | ActiveRecord: 9.1ms)
+
+
