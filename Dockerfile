@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
 	nodejs \
 	postgresql postgresql-contrib \
 	yarn 
+RUN gem install bundler -v 1.17.3
 	
 WORKDIR /product-register
 COPY Gemfile Gemfile.lock /product-register/
